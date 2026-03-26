@@ -18,7 +18,8 @@ const authMiddleware = async (req, res, next) => {
         ...category.map(c => `/brand-filter/${c}`),
         ...category.map(c => `/sort-by-price-product/${c}`),
         '/search-product',
-        '/payment-process'
+        '/payment-process',
+        '/ping'
     ];
 
     res.locals.existingUser = null;
